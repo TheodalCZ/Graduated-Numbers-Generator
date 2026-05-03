@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+*.log
+*.tmp
+*.bak
+*.lock
+
+*.atbx.lock
+*.aprx.lock
+*.lyrx.lock
+*.gdb-lock
+
+*.zip
+
+# Add large local test data only when you really want to publish them
+sample-data/private/
+examples/temp/
