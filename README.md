@@ -59,19 +59,17 @@ Example of searching and adding the Czech regional boundary dataset from Portal 
 
 ## Tool Interface
 
-**Collapsed:**
-
 <p align="center">
-  <img src="examples/screenshots/toolbox_collapsed.png" width="320" alt="Toolbox collapsed"/>
+  <strong>Collapsed</strong><br/>
+  <img src="examples/screenshots/toolbox_collapsed.png" width="320" alt="Toolbox collapsed"/><br/>
+  <em>Tool interface immediately after initialization.</em>
 </p>
 
-Tool interface immediately after initialization.
-
-**Expanded:**
-
-![Toolbox expanded](examples/screenshots/toolbox_expanded.png)
-
-Example of the fully expanded tool with default parameter values, active gradients, and a selected input layer and attribute.
+<p align="center">
+  <strong>Expanded</strong><br/>
+  <img src="examples/screenshots/toolbox_expanded.png" width="320" alt="Toolbox expanded"/><br/>
+  <em>Example of the fully expanded tool with default parameter values, active gradients, and a selected input layer and attribute.</em>
+</p>
 
 ## How to Use
 
