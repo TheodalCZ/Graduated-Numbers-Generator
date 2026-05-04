@@ -83,9 +83,18 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 
 ## Example Maps
 
-| Map Topic | Preview |
-|---|---|
-| **Czech Republic - Number of Women and Men by Region (2021, thousands)** | ![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg) |
-| **Poland - Average Monthly Wages by Voivodeship (2020, PLN)** | ![Poland - Average Monthly Wages by Voivodeship (2020, PLN)](examples/maps/pl.jpg) |
-| **Germany - Number of Fire Brigades by Federal State** | ![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg) |
-| **Europe - Number of Airports with an ICAO Code by Country** | ![Europe - Number of Airports with an ICAO Code by Country](examples/maps/eu.jpg) |
+**Czech Republic — Number of Women and Men by Region (2021, thousands)**
+
+![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg)
+
+**Poland — Average Monthly Wages by Voivodeship (2020, PLN)**
+
+![Poland - Average Monthly Wages by Voivodeship (2020, PLN)](examples/maps/pl.jpg)
+
+**Germany — Number of Fire Brigades by Federal State**
+
+![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg)
+
+**Europe — Number of Airports with an ICAO Code by Country**
+
+![Europe - Number of Airports with an ICAO Code by Country](examples/maps/eu.jpg)
