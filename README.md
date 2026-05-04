@@ -67,7 +67,7 @@ Example of searching and adding the Czech regional boundary dataset from Portal 
 
 <p align="center">
   <strong>Expanded</strong><br/>
-  <img src="examples/screenshots/toolbox_expanded.png" width="320" alt="Toolbox expanded"/><br/>
+  <img src="examples/screenshots/toolbox_expanded.png" width="100%" alt="Toolbox expanded"/><br/>
   <em>Example of the fully expanded tool with default parameter values, active gradients, and a selected input layer and attribute.</em>
 </p>
 
