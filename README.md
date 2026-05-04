@@ -1,5 +1,7 @@
 # Graduated Numbers Generator for ArcGIS Pro
 
+[![Download Toolbox](https://img.shields.io/badge/⬇%20Download%20Toolbox-.atbx-blue?style=for-the-badge)](https://github.com/TheodalCZ/Graduated-Numbers-Generator/releases/latest)
+
 A geoprocessing toolbox (`.atbx`) for ArcGIS Pro that automates the creation of graduated number map method — a cartographic method where numeric values are visualised directly as styled labels with smooth gradation of size, colour, and font weight.
 
 **IMPORTANT: This toolbox is supported in ArcGIS Pro 3.3 and newer.**
