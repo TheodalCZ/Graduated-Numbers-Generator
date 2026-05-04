@@ -62,7 +62,7 @@ Example of searching and adding the Czech regional boundary dataset from Portal 
 **Collapsed:**
 
 <p align="center">
-  <img src="examples/screenshots/toolbox_collapsed.png" width="480" alt="Toolbox collapsed"/>
+  <img src="examples/screenshots/toolbox_collapsed.png" width="320" alt="Toolbox collapsed"/>
 </p>
 
 Tool interface immediately after initialization.
