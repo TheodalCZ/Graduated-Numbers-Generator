@@ -22,6 +22,12 @@ The tool does not modify the source data. It uses a custom module connected to t
 
 Sample data for the examples are accessed directly from ArcGIS Portal / ArcGIS Online (no local data download is required).
 
+## Author
+
+**Pavel Sedláček**
+- LinkedIn: [linkedin.com/in/pavelsedlacek-1142000cz](https://www.linkedin.com/in/pavelsedlacek-1142000cz)
+- Email: [pavel.sedlacek2000@seznam.cz](mailto:pavel.sedlacek2000@seznam.cz)
+
 ## About the Thesis
 
 This tool was developed as part of the master's thesis:
