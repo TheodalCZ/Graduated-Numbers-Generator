@@ -14,9 +14,9 @@ ArcGIS Pro has no built-in support for graduated number map. This tool fills tha
 
 - **Data Statistics** — field selection and statistical overview
 - **Classification & Size** — classification method, number of classes, size range
-- **Font Styling** — font family, weight, colour gradients, variable font support
-- **Format & Units** — number formatting, units, label offsets
-- **Advanced Styling** — halo, shadow, underline, wrapping control
+- **Font Styling** — font family, weight, letter spacing, colour gradients
+- **Format & Units** — thousand separator, value scale, label suffix, decimal places, label wrapping
+- **Advanced Styling** — label offsets, halo (with gradient), shadow, underline
 
 The tool does not modify the source data. It uses a custom module connected to the Windows registry to read installed system fonts, and generates Arcade expressions for dynamic label formatting.
 
