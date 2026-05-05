@@ -68,9 +68,9 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 
 ---
 
-<div align="center">
-
 ### Germany — Number of Fire Brigades by Federal State
+
+<div align="center">
 
 ![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg)
 
@@ -80,9 +80,9 @@ This map demonstrates near-default tool settings. The only adjustments were font
 
 ---
 
-<div align="center">
-
 ### Poland — Average Monthly Wages by Voivodeship (2020, PLN)
+
+<div align="center">
 
 ![Poland - Average Monthly Wages by Voivodeship (2020, PLN)](examples/maps/pl.jpg)
 
@@ -92,9 +92,9 @@ This map was intentionally produced in English to demonstrate international use 
 
 ---
 
-<div align="center">
-
 ### Europe — Number of Airports with an ICAO Code by Country
+
+<div align="center">
 
 ![Europe - Number of Airports with an ICAO Code by Country](examples/maps/eu.jpg)
 
@@ -104,9 +104,9 @@ This map uses the **Proportional (Unclassed)** classification method to generate
 
 ---
 
-<div align="center">
-
 ### Czech Republic — Number of Women and Men by Region (2021, thousands)
+
+<div align="center">
 
 ![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg)
 
