@@ -68,9 +68,9 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 
 ---
 
-### Czech Republic — Number of Women and Men by Region (2021, thousands)
+### Germany — Number of Fire Brigades by Federal State
 
-![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg)
+![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg)
 
 ---
 
@@ -80,15 +80,15 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 
 ---
 
-### Germany — Number of Fire Brigades by Federal State
-
-![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg)
-
----
-
 ### Europe — Number of Airports with an ICAO Code by Country
 
 ![Europe - Number of Airports with an ICAO Code by Country](examples/maps/eu.jpg)
+
+---
+
+### Czech Republic — Number of Women and Men by Region (2021, thousands)
+
+![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg)
 
 ---
 
