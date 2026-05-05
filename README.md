@@ -68,13 +68,19 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 
 ---
 
+<div align="center">
+
 ### Germany — Number of Fire Brigades by Federal State
 
 ![Germany - Number of Fire Brigades by Federal State](examples/maps/de.jpg)
 
 This map demonstrates near-default tool settings. The only adjustments were font size scaled to match the map's extent, font family, and text colour — applied for visual consistency across the entire example series.
 
+</div>
+
 ---
+
+<div align="center">
 
 ### Poland — Average Monthly Wages by Voivodeship (2020, PLN)
 
@@ -82,7 +88,11 @@ This map demonstrates near-default tool settings. The only adjustments were font
 
 This map was intentionally produced in English to demonstrate international use cases. It uses the Anglo-Saxon number format (comma as thousands separator, period as decimal). Classification method: Equal Interval with 5 classes. Font colour gradient from white to yellow, with halo effect and text shadow applied to improve legibility of labels on the map field.
 
+</div>
+
 ---
+
+<div align="center">
 
 ### Europe — Number of Airports with an ICAO Code by Country
 
@@ -90,13 +100,19 @@ This map was intentionally produced in English to demonstrate international use 
 
 This map uses the **Proportional (Unclassed)** classification method to generate mathematically precise graduated font sizes. A reverse font weight gradient (Bold → Regular) was applied to improve readability of smaller values. The halo effect was also enabled. After generation, labels were converted to graphics using the native ArcGIS Pro *Convert Labels to Graphics* function, allowing manual repositioning of overlapping labels while preserving the exact sizes defined by the tool.
 
+</div>
+
 ---
+
+<div align="center">
 
 ### Czech Republic — Number of Women and Men by Region (2021, thousands)
 
 ![Czech Republic - Number of Women and Men by Region (2021, thousands)](examples/maps/cr.jpg)
 
 This map demonstrates visualising two numeric values per feature simultaneously by running the tool twice on duplicated layers — once for women (pink) and once for men (blue), with colours matching the map title. Classification method: **Manual**, with class boundaries set at intervals of 100,000. Value Scale was set to thousands and Decimal Places After Scale to zero to avoid inappropriate decimal display for person counts.
+
+</div>
 
 ---
 
