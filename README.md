@@ -40,23 +40,6 @@ A detailed thesis summary is available in [`docs/thesis-summary.md`](docs/thesis
 - `examples/` — sample maps and screenshots of the tool in action
 - `sample-data/` — information about the datasets used in the examples
 
-## Sample Data (ArcGIS Portal)
-
-Sample datasets used in this project are hosted externally in ArcGIS Portal / ArcGIS Online. They are not redistributed in this repository.
-
-Source citation (example dataset used in this repository): **ARCDATA PRAHA, ZÚ, ČSÚ - Kraje (ArcČR 2024), Česká republika, (ArcGIS Online).**
-
-To get working data quickly in ArcGIS Pro:
-
-1. Open the **Catalog** pane and switch to **Portal** (or use [ArcGIS Online](https://www.arcgis.com)).
-2. Search for one of the datasets listed in [`sample-data/README.md`](sample-data/README.md) (for example: `Kraje (ArcČR 2024)`).
-3. Add the hosted feature layer to your map.
-4. Run the toolbox on that layer and select a numeric attribute.
-
-![ArcGIS Portal search example](examples/screenshots/data_examplepng.png)
-
-Example of searching and adding the Czech regional boundary dataset from Portal in ArcGIS Pro.
-
 ## Tool Interface
 
 <p align="center">
@@ -108,3 +91,20 @@ If needed, the source logic is documented in `src/` for reference or modificatio
 ![Europe - Number of Airports with an ICAO Code by Country](examples/maps/eu.jpg)
 
 ---
+
+## Sample Data (ArcGIS Portal)
+
+Sample datasets used in this project are hosted externally in ArcGIS Portal / ArcGIS Online. They are not redistributed in this repository.
+
+Source citation (example dataset used in this repository): **ARCDATA PRAHA, ZÚ, ČSÚ - Kraje (ArcČR 2024), Česká republika, (ArcGIS Online).**
+
+To get working data quickly in ArcGIS Pro:
+
+1. Open the **Catalog** pane and switch to **Portal** (or use [ArcGIS Online](https://www.arcgis.com)).
+2. Search for one of the datasets listed in [`sample-data/README.md`](sample-data/README.md) (for example: `Kraje (ArcČR 2024)`).
+3. Add the hosted feature layer to your map.
+4. Run the toolbox on that layer and select a numeric attribute.
+
+![ArcGIS Portal search example](examples/screenshots/data_examplepng.png)
+
+Example of searching and adding the Czech regional boundary dataset from Portal in ArcGIS Pro.

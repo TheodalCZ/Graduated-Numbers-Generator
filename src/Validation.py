@@ -7,10 +7,10 @@ from fontTools.ttLib import TTFont
 
 
 class ToolValidator:
-    """Validator for the Graduated Numbers Generator toolbox.
+    """Validator for the toolbox.
 
     This class manages parameter validation and dynamic list updates for
-    the custom graduated labels script tool in ArcGIS Pro.
+    the Graduated Numbers Generator script tool in ArcGIS Pro.
     """
 
     def __init__(self):
@@ -885,8 +885,18 @@ class ToolValidator:
             
             # RGB / HSL (3 parts)
             if len(parts) == 3:
-                # HSL is accepted when explicitly marked by % or deg.
-                if parts[1].endswith('%') or parts[2].endswith('%') or parts[0].lower().endswith('deg'):
+                # HSL: explicit % or deg markers, or decimal fractions (0 < v < 1) in S/L
+                _hsl3 = parts[1].endswith('%') or parts[2].endswith('%') or parts[0].lower().endswith('deg')
+                if not _hsl3:
+                    for _i in (1, 2):
+                        if '.' in parts[_i]:
+                            try:
+                                if 0.0 < float(parts[_i]) < 1.0:
+                                    _hsl3 = True
+                                    break
+                            except Exception:
+                                pass
+                if _hsl3:
                     try:
                         h = parse_hsl_angle(parts[0])
                         s_comp = parse_hsl_component(parts[1])
@@ -905,8 +915,18 @@ class ToolValidator:
             
             # RGBA / HSLA / CMYK (4 parts)
             if len(parts) == 4:
-                # HSLA is accepted when explicitly marked by % or deg.
-                if parts[1].endswith('%') or parts[2].endswith('%') or parts[0].lower().endswith('deg'):
+                # HSLA: explicit % or deg markers, or decimal fractions (0 < v < 1) in S/L
+                _hsl4 = parts[1].endswith('%') or parts[2].endswith('%') or parts[0].lower().endswith('deg')
+                if not _hsl4:
+                    for _i in (1, 2):
+                        if '.' in parts[_i]:
+                            try:
+                                if 0.0 < float(parts[_i]) < 1.0:
+                                    _hsl4 = True
+                                    break
+                            except Exception:
+                                pass
+                if _hsl4:
                     try:
                         h = parse_hsl_angle(parts[0])
                         s_comp = parse_hsl_component(parts[1])
@@ -926,11 +946,16 @@ class ToolValidator:
                 except Exception:
                     pass
                 
-                # Try as CMYK (0-1 or 0-100 range)
+                # Try as CMYK (0-1, 0-100, or 0%-100%)
                 try:
-                    c, m, y, k = float(parts[0]), float(parts[1]), float(parts[2]), float(parts[3])
-                    def ok(v): return 0 <= v <= 1 or 0 <= v <= 100
-                    if all(ok(v) for v in (c, m, y, k)):
+                    def _cv(p):
+                        p = p.strip()
+                        if p.endswith('%'):
+                            return float(p[:-1]) / 100.0
+                        v = float(p)
+                        return v / 100.0 if v > 1.0 else v
+                    c, m, y, k = _cv(parts[0]), _cv(parts[1]), _cv(parts[2]), _cv(parts[3])
+                    if all(0.0 <= v <= 1.0 for v in (c, m, y, k)):
                         return True
                 except Exception:
                     pass
@@ -940,10 +965,15 @@ class ToolValidator:
             # CMYKA (5 parts)
             if len(parts) == 5:
                 try:
-                    c, m, y, k = float(parts[0]), float(parts[1]), float(parts[2]), float(parts[3])
+                    def _cv5(p):
+                        p = p.strip()
+                        if p.endswith('%'):
+                            return float(p[:-1]) / 100.0
+                        v = float(p)
+                        return v / 100.0 if v > 1.0 else v
+                    c, m, y, k = _cv5(parts[0]), _cv5(parts[1]), _cv5(parts[2]), _cv5(parts[3])
                     a = float(parts[4])
-                    def ok(v): return 0 <= v <= 1 or 0 <= v <= 100
-                    if all(ok(v) for v in (c, m, y, k)) and valid_alpha(a):
+                    if all(0.0 <= v <= 1.0 for v in (c, m, y, k)) and valid_alpha(a):
                         return True
                 except Exception:
                     pass
@@ -1104,9 +1134,6 @@ class ToolValidator:
                 self.params[20].clearMessage()
         except Exception:
             pass
-
-        # Removed overwriting filter.list for param[14] to only styles without gradient
-        # (Font weight list ordering is managed in initializeParameters/updateParameters.)
 
         return
 

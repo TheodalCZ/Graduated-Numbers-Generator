@@ -17,7 +17,3 @@ Contains the thesis summary, upload guide, and repository structure explanation.
 ## `examples/`
 
 Contains screenshots, map exports, and other demonstration outputs of the tool.
-
-## `sample-data/`
-
-Contains small demonstration data suitable for public sharing.
