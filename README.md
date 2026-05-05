@@ -26,7 +26,7 @@ Sample data for the examples are accessed directly from ArcGIS Portal / ArcGIS O
 
 This tool was developed as part of the master's thesis:
 
-> SEDLÁČEK, Pavel. *Automatizace tvorby číselných kartodiagramů v prostředí ArcGIS*. Palacký University Olomouc, Faculty of Science, Department of Geoinformatics, 2026. Supervisor: Mgr. Radek Barvíř, Ph.D.
+> SEDLÁČEK, Pavel. *Automatizace tvorby číselných kartodiagramů v prostředí ArcGIS* (*Automation of Designing Graduated-Number Maps in ArcGIS Environment*). Palacký University Olomouc, Faculty of Science, Department of Geoinformatics, 2026. Supervisor: Mgr. Radek Barvíř, Ph.D.
 > 
 > Full thesis: https://www.geoinformatics.upol.cz/dprace/magisterske/sedlacek26/
 
